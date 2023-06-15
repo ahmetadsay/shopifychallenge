@@ -8,7 +8,7 @@ export const NominationProvider = ({ children }) => {
 
   const addNomination = async (movie) => {
     try {
-      const response = await axios.get(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=9963a80d`);
+      const response = await axios.get(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=9963a80d`);
       if (response.data) {
         const { Title, Year, Poster } = response.data;
         const movieWithImage = { ...movie, title: Title, year: Year, poster: Poster };
