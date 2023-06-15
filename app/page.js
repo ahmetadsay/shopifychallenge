@@ -12,7 +12,7 @@ export default function Home() {
 
   const handleSearch = async (searchTerm) => {
     try {
-      const response = await axios.get(`http://www.omdbapi.com/?s=${searchTerm}&apikey=9963a80d`);
+      const response = await axios.get(`https://www.omdbapi.com/?s=${searchTerm}&apikey=9963a80d`);
       if (response.data && response.data.Search) {
         setSearchResults(response.data.Search);
       } else {
