@@ -3,10 +3,10 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
-import SearchForm from '/Users/ahmet/Desktop/Development/shopfiy/app/components/SearchForm.jsx';
-import SearchResults from '/Users/ahmet/Desktop/Development/shopfiy/app/components/SearchResults.jsx';
-import NominationList from '/Users/ahmet/Desktop/Development/shopfiy/app/components/NominationList.jsx';
-import { NominationProvider } from '/Users/ahmet/Desktop/Development/shopfiy/app/context/NominationContext.js';
+import SearchForm from '../app/components/SearchForm.jsx';
+import SearchResults from '../app/components/SearchResults.jsx';
+import NominationList from '../app/components/NominationList.jsx';
+import { NominationProvider } from '../app/context/NominationContext.js';
 export default function Home() {
   const [searchResults, setSearchResults] = useState([]);
 
